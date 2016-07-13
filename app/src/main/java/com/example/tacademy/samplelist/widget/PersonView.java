@@ -28,13 +28,13 @@ public class PersonView extends FrameLayout {
     ImageView photoView;
     TextView nameView, ageView;
 
-    public interface OnImageClickLsitener{
+    public interface OnImageClickListener{
         public void onImageClick(PersonView view, Person person);
 
     }
 
-    OnImageClickLsitener mListener;
-    public void setIOnImageClicklsitener(OnImageClickLsitener listener){
+    OnImageClickListener mListener;
+    public void setOnImageClickLsitener(OnImageClickListener listener){
         mListener = listener;
     }
 

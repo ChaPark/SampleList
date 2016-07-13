@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         personView = (PersonView)findViewById(R.id.view_person);
-        personView.setIOnImageClicklsitener(new PersonView.OnImageClickLsitener(){
+        personView.setOnImageClickLsitener(new PersonView.OnImageClickListener() {
             @Override
             public void onImageClick(PersonView view, Person person) {
                 photoView.setImageDrawable(person.getPhoto());
