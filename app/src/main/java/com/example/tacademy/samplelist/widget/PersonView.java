@@ -3,17 +3,19 @@ package com.example.tacademy.samplelist.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.FrameLayout;
+import android.widget.Checkable;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.tacademy.samplelist.R;
+
 import com.example.tacademy.samplelist.data.Person;
 
 /**
  * Created by Tacademy on 2016-07-13.
  */
-public class PersonView extends FrameLayout {
+public class PersonView extends RelativeLayout implements Checkable {
     public PersonView(Context context) {
         this(context, null);
 
@@ -27,6 +29,8 @@ public class PersonView extends FrameLayout {
 
     ImageView photoView;
     TextView nameView, ageView;
+
+
 
     public interface OnImageClickListener{
         public void onImageClick(PersonView view, Person person);
@@ -72,4 +76,21 @@ public class PersonView extends FrameLayout {
 
 
     }
+
+    @Override
+    public void setChecked(boolean checked) {
+
+    }
+
+    @Override
+    public boolean isChecked() {
+        return false;
+    }
+
+    @Override
+    public void toggle() {
+
+    }
+
+
 }
